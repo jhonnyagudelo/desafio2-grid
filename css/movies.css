@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8rf8ij');
+  src:  url('../fonts/icomoon.eot?8rf8ij#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8rf8ij') format('truetype'),
+    url('../fonts/icomoon.woff?8rf8ij') format('woff'),
+    url('../fonts/icomoon.svg?8rf8ij#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-fire:before {
+  content: "\e9a9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+
+body{
+  margin:0;
+  background: white;
+  font-family:sans-serif;
+}
+
+.contenedor{
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr;
+  grid-template-areas: "search search search search"
+                        "menu filmes-extreno filmes-extreno filmes-extreno"
+                        "menu filmes-cine filmes-cine filmes-cine"
+                        "menu filmes-series filmes-series filmes-series";
+  /*grid-gap: 5px;*/
+}
+
+.search{
+  grid-area: search;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 112.3px 5px rgba(240, 248, 255, 1)
+}
+
+.menu{
+  grid-area:menu;
+  background: rgba(255, 0, 0, .5);
+  margin-right: 30px;
+}
+
+.menu-list{
+  list-style-type: none;
+  padding-left:0;
+  margin-top: 45px;
+  padding-top: 10px;
+}
+
+
+.icon-link{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.icon-link span{
+  color:white;
+  font-size: 36px;
+  display: flex;
+  margin-left: 36px;
+}
+
+.icon-link span:hover{
+  font-size: 3em;
+  margin-left: 30px;
+}
+
+.icon-link p{
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.link-menu:nth-last-child(1){
+  transform: translateY(591px);
+}
+
+.search-icon{
+  color: #878282;
+  font-size: 16px;
+  transform: translate(29px, 27px);
+  z-index: 1;
+}
+
+
+.search-film{
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor:pointer;
+  font-size: 16px;
+  height: 1.5em;
+  margin-top: 16px;
+  padding: 7px;
+  padding-left: 34px;
+  transform: translateX(-138px);
+  transition: .3s;
+  width: 25%;
+}
+
+.search-film:focus{
+  background: rgba(211, 211, 211, .5);
+  width:30%;
+  margin-left: 40px;
+}
+
+.emoji-usuario img{
+  border-radius: 50%;
+  border:1px solid #403B3B;
+  margin-left: 10px;
+  /*width: 50px;*/
+}
+
+.emoji-usuario img:hover{
+  background: rgba(211, 211, 211, 1);
+}
+
+.usuario{
+  display: flex;
+  margin-right: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+
+}
+
+.nombre-usuario{
+  display: flex;
+  align-self: center;
+  font-size: 1.5em;
+
+}
+
+.filmes-extreno{
+  grid-area: filmes-extreno;
+}
+
+.filmes-extreno, .categoria-film{
+  margin-top: 50px;
+}
+
+.extrenos{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+grid-gap:30px;
+}
+
+.filmes-cine{
+  grid-area: filmes-cine;
+}
+
+.cine{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap:30px;
+}
+
+.filmes-series{
+  grid-area: filmes-series;
+}
+
+.series{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap:30px;
+}
+
+.film-article img{
+  width: 100%;
+}
+
+.description{
+  color:white;
+  transition: all .3s ease 0s;
+  margin-top: -30%;
+  opacity: 0;
+  padding: 5px;
+
+}
+
+.description:hover{
+    border:1px solid black;
+    opacity: 1;
+    background: rgba(0, 0, 0, .4);
+    transform: translateY(-79px);
+}
+
+.categoria-film{
+  margin-top: 0;
+  text-align: center
+}
