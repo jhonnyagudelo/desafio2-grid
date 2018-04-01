@@ -65,7 +65,7 @@ body{
 
 .menu{
   grid-area:menu;
-  background:rgba(174, 50, 59, .8);
+  background: rgba(255, 0, 0, .5);
   margin-right: 30px;
 }
 
@@ -121,7 +121,7 @@ body{
   margin-top: 16px;
   padding: 7px;
   padding-left: 34px;
-  transform: translateX(-138px);
+  transform: translateX(-122px);
   transition: .3s;
   width: 25%;
 }
