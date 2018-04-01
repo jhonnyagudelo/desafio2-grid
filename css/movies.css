@@ -65,7 +65,7 @@ body{
 
 .menu{
   grid-area:menu;
-  background: rgba(255, 0, 0, .5);
+  background:rgba(174, 50, 59, .8);
   margin-right: 30px;
 }
 
